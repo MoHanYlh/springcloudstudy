@@ -1,0 +1,14 @@
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://user:password@EUREKA_HOST:EUREKA_PORT/eureka/
+security: 
+  basic: 
+    enabled: true #开启基于HTTP basic的认证
+  user: 
+    name: user
+    password: password123
