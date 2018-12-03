@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: 8001
 management:
   security:
     enabled: false
@@ -25,7 +25,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://peer1:8761/eureka/,http://peer:8762/eureka/
+      defaultZone: http://localhost:8761/eureka/
   instance:
     ip-address: true
 logging:
